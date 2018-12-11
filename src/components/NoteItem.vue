@@ -12,7 +12,6 @@
       <span class="has-text-grey-light">Created at: {{ note.createdAt | moment }}</span>
       <br>
       <span class="has-text-grey-light">last updated: {{ note.updatedAt | moment }}</span><br>
-      <!-- <button @click="updateNote" class="button is-small is-pulled-right">update</button> -->
       <UpdateNoteModal :note="note" @updateNote="updateNote" :key="note._id"/>
     </div>
   </article>
